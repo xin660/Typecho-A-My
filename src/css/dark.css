@@ -1,0 +1,52 @@
+.icon-dark-mode{display:none}
+.dark-mode .icon-light-mode{display:none}
+.dark-mode .icon-dark-mode{display:flow-root!important}
+body.dark-mode{background:#212529!important;color:#616770}
+.dark-mode .container{background-color:#212529!important}
+.dark-mode .card{background-color:#30363e}
+.dark-mode .navbar-light .navbar-nav .nav-link{color:rgb(201 201 201 / 90%)}
+.dark-mode .navbar-light .navbar-nav .nav-link.active{color:rgb(201 201 201 / 90%);background:linear-gradient(to bottom,transparent 90%,rgb(255 255 255 / 39%) 0) no-repeat}
+.dark-mode .ax_post_box-state{border-top:1px solid #212529;border-bottom:1px solid #212529}
+.dark-mode .post_category-link a{background:#212529}
+.dark-mode .author-title{color:#616770}
+.dark-mode .ax_post_box-comment-text-inner{background-color:#616770}
+.dark-mode .ax_post_box-comment-text::before{border-right-color:#616770}
+.dark-mode .ax_post_box-comment-text-inner a{color:#fff}
+.dark-mode a.view-more-comment{color:#616770}
+.dark-mode a.view-more-comment:hover{background-color:#212529}
+.dark-mode .page-next{background:#212529}
+.dark-mode .card-footer{background-color:#212529}
+.dark-mode .page-next a{background:#30363e;color:#616770}
+.dark-mode .post_entry-content a p{color:#616770!important}
+.dark-mode .secret{background:repeating-linear-gradient(145deg ,#31363c,#31363c 15px,#212529 0,#212529 30px)}
+.dark-mode .reply2view{background:repeating-linear-gradient(145deg ,#31363c,#31363c 15px,#212529 0,#212529 30px)}
+.dark-mode .ax_post_box-state .ax_post_box-state-btns:hover{background-color:#212529}
+.dark-mode #book .books-content li .info h3{color:#616770!important}
+.dark-mode .callout{background-color:#21252b;color:#fff}
+.dark-mode .ax_posts_box-state{border-top:1px solid #212529;border-bottom:1px solid #212529}
+.dark-mode .ax_posts_box-state .ax_posts_box-state-btns a{color:#616770!important}
+.dark-mode .vcomment{background-color:rgb(48 54 62)!important}
+.dark-mode .v-comment{background-color:rgb(48 54 62)!important}
+.dark-mode .vpanel{border:1px solid rgb(33 37 41)}
+.dark-mode .dark-mode .v-comment{background-color:rgb(48 54 62)}
+.dark-mode .comment-parent{border-bottom:2px dashed #212529}
+.dark-mode .v-comment a{color:#616770}
+.dark-mode .comment-list li.comment-level-odd{background:#212529}
+.dark-mode .page-navigator a{background:#212529}
+.dark-mode .page-header{background-color:#30363e}
+.dark-mode .vcard .cross-vcontent{background-color:#212529}
+.dark-mode .vcard .cross-vcontent:before{border-color:#212529 transparent transparent transparent}
+.dark-mode .card-body{color:#b4b5b6}
+.dark-mode .FriendWall_span{color:#b4b5b6}
+.dark-mode .nav-tabs .nav-link.active{color:#b4b5b6;background-color:#30363e;border-color:#212529}
+.dark-mode .links li{border:1px solid #212529}
+.dark-mode .doubanboard-item{background:#212529}
+.dark-mode .doubanboard-title,.doubanboard-title a{color:#7e8388!important}
+.dark-mode #book .content li{background-color:#30363e}
+.dark-mode .post-content{color:#b0b1b2!important}
+.dark-mode pre{background-color:#212529}
+.dark-mode .accordion .card{border:1px solid #212529}
+.dark-mode .accordion .card-header{background-color:#212529}
+.dark-mode .books>:first-child{box-shadow:5px 5px 20px #212529}
+.dark-mode .book_post_thumbnail{background:#212529}
+.dark-mode textarea.form-control{border:1px solid #212529;background-color:#212529}
