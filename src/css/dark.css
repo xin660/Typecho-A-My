@@ -21,6 +21,7 @@ body.dark-mode{background:#212529!important;color:#616770}
 .dark-mode .secret{background:repeating-linear-gradient(145deg ,#31363c,#31363c 15px,#212529 0,#212529 30px)}
 .dark-mode .reply2view{background:repeating-linear-gradient(145deg ,#31363c,#31363c 15px,#212529 0,#212529 30px)}
 .dark-mode .ax_post_box-state .ax_post_box-state-btns:hover{background-color:#212529}
+.dark-mode .ax_posts_box-state .ax_posts_box-state-btns:hover {background-color: #212529;}
 .dark-mode #book .books-content li .info h3{color:#616770!important}
 .dark-mode .callout{background-color:#21252b;color:#fff}
 .dark-mode .ax_posts_box-state{border-top:1px solid #212529;border-bottom:1px solid #212529}
@@ -28,6 +29,7 @@ body.dark-mode{background:#212529!important;color:#616770}
 .dark-mode .vcomment{background-color:rgb(48 54 62)!important}
 .dark-mode .v-comment{background-color:rgb(48 54 62)!important}
 .dark-mode .vpanel{border:1px solid rgb(33 37 41)}
+.dark-mode .veditor:focus {background: rgb(33 37 41);}
 .dark-mode .dark-mode .v-comment{background-color:rgb(48 54 62)}
 .dark-mode .comment-parent{border-bottom:2px dashed #212529}
 .dark-mode .v-comment a{color:#616770}
@@ -50,3 +52,6 @@ body.dark-mode{background:#212529!important;color:#616770}
 .dark-mode .books>:first-child{box-shadow:5px 5px 20px #212529}
 .dark-mode .book_post_thumbnail{background:#212529}
 .dark-mode textarea.form-control{border:1px solid #212529;background-color:#212529}
+.dark-mode .vheader input {border-bottom: 2px dashed #212529;}
+.dark-mode .dropdown-menu.show {display: block;background: #212529;}
+.dark-mode .dropdown-item:focus, .dropdown-item:hover {background-color: #30363e;}
