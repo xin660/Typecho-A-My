@@ -325,6 +325,3 @@ function switchNightMode() {
       }
     }
   })();
-
-  
-
