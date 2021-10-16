@@ -146,7 +146,6 @@ textarea.form-control{height:5rem;border:1px solid #cecece;background-color:#fff
 .comment-list{padding:0}
 .v-comment{box-sizing:content-box;line-height:1.75;background-color:rgb(255 255 255)}
 .v-comment img{max-width:100%;border:none}
-.biaoqing{height:100%}
 .v-comment a{position:relative;display:inline-block;text-decoration:none;cursor:pointer;color:#000}
 .v-comment a:hover{color:#2f6f9f}
 .vcomment{position:relative;display:flex;margin-bottom:.75em;background-color:rgb(255 255 255);padding:1rem}
@@ -327,7 +326,6 @@ a.view-more-comment:hover{color:#4d5259;background-color:#f1f3fa}
 .reply2view{background:repeating-linear-gradient(145deg,#f2f2f2,#f2f2f2 15px,#fff 0,#fff 30px);padding:10px 40px 10px 40px;position:relative}
 .secret{background:repeating-linear-gradient(145deg,#f2f2f2,#f2f2f2 15px,#fff 0,#fff 30px);padding:10px 40px 10px 40px;position:relative;border-radius:5px}
 .ax_post_box-comment-text-inner .secret{padding:1px 10px!important}
-.ax_post_box-comment-text-inner .biaoqing{width:1.5rem!important}
 .secret-textarea{background:repeating-linear-gradient(145deg,#f2f2f2,#f2f2f2 15px,#fff 0,#fff 30px);position:relative}
 #secret-button{display:none}
 .secret-label{position:relative;display:inline-block;width:30px;height:15px;background-color:#ccc;border:1px solid #ccc;border-radius:30px;cursor:pointer;margin-bottom:0}
