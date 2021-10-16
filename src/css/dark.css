@@ -54,4 +54,4 @@ body.dark-mode{background:#212529!important;color:#616770}
 .dark-mode textarea.form-control{border:1px solid #212529;background-color:#212529}
 .dark-mode .vheader input {border-bottom: 2px dashed #212529;}
 .dark-mode .dropdown-menu.show {display: block;background: #212529;}
-.dark-mode .dropdown-item:focus, .dropdown-item:hover {background-color: #30363e;}
+.dark-mode .dropdown-item:hover {background-color: #30363e;}
