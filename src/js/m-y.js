@@ -1,4 +1,5 @@
 
+ 
  //js出始化lazyload并设置图片显示方式
  $(function() {$("div.lazy,img.lazy").lazyload({effect: "fadeIn", effectspeed : 1000,failure_limit : 20, threshold: 50});});
  //pjax开启后的pjax回调
@@ -325,3 +326,8 @@ function switchNightMode() {
       }
     }
   })();
+
+
+
+  
+
