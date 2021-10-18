@@ -1,7 +1,7 @@
 .icon-dark-mode{display:none}
 .dark-mode .icon-light-mode{display:none}
 .dark-mode .icon-dark-mode{display:flow-root!important}
-body.dark-mode{background:#212529!important;color:#616770}
+body.dark-mode{background-image: url(https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/gallery/darkmodepicture6.jpg) !important;color:#616770}
 .dark-mode .container{background-color:#212529!important}
 .dark-mode .card{background-color:#30363e}
 .dark-mode .navbar-light .navbar-nav .nav-link{color:rgb(201 201 201 / 90%)}
@@ -55,3 +55,30 @@ body.dark-mode{background:#212529!important;color:#616770}
 .dark-mode .vheader input {border-bottom: 2px dashed #212529;}
 .dark-mode .dropdown-menu.show {display: block;background: #212529;}
 .dark-mode .dropdown-item:hover {background-color: #30363e;}
+/* 背景宇宙星光  */
+#universe{
+    display: none;
+}
+.dark-mode #universe{
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background: #21282c8f;
+}
+.dark-mode #backToTop {
+    background: #30363e;
+    color: #fff;
+}
+.dark-mode #changeMode {
+    background: #30363e;
+    color: #fff;
+}
