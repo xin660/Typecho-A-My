@@ -24,6 +24,7 @@ $('.Search').click(function(){
 });
 
 /* 私密回复 */
+function secret(){
 let holder = $('.comment-respond textarea').attr('placeholder');
 $('#secret-button').click(function () {
     let textareaDom = $('.comment-respond textarea');
@@ -35,6 +36,37 @@ $('#secret-button').click(function () {
         $(".comment-respond textarea").removeClass("secret-textarea");
     }
 })
+}
+
+function tocMulu() {
+    if ($('#TOC-text').length > 0) {
+        var headerEl = 'h1,h2,h3,h4,h5,h6',  
+            content = '.post-content',
+            idArr = {}; 
+        $(content).children(headerEl).each(function () {
+            var headerId = $(this).text().replace(/[\s|\~|`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\_|\+|\=|\||\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?|\：|\，|\。]/g, '');
+            headerId = headerId.toLowerCase();
+            if (idArr[headerId]) {
+                $(this).attr('id', headerId + '-' + idArr[headerId]);
+                idArr[headerId]++;
+            }
+            else {
+                idArr[headerId] = 1;
+                $(this).attr('id', headerId);
+            }
+        });
+     
+        tocbot.init({
+            tocSelector: '#TOC-text',
+            contentSelector: content,
+            headingSelector: headerEl,
+            scrollSmooth: true,
+            scrollSmoothOffset: 0,
+            headingsOffset: 0
+        });
+    };
+}
+
 
 //lazyload
 function lazy(){
@@ -73,7 +105,7 @@ function dianzan(){
             if (res.success) {
             $(this).removeClass('mdi-thumb-up-outline').addClass('mdi-thumb-up')
             $(this).text(' ' + res.count + ' ' + '赞')
-            $.notify({
+                $.notify({
                     // options
                     message: '感谢支持！' 
                     },{
@@ -278,6 +310,7 @@ $('.next').click(function() {
     return false;
 });
 }
+
 //PjAX配置
 if (Config.Pjax === 'true') {
     $(document).pjax('a[href^="' + Config.homeUrl + '"]:not(a[target="_blank"], a[no-pjax])', {
@@ -287,7 +320,6 @@ if (Config.Pjax === 'true') {
     })
     .on('pjax:send', function() { 
         NProgress.start(); 
-        Ajax_next_post();
     })
     .on('pjax:complete', function() {
         //NProgress
@@ -296,14 +328,33 @@ if (Config.Pjax === 'true') {
         lazy();
         backToTop();
         dianzan();
-
+        secret();
+        ajaxcomments();
+        tocMulu();
+        if($(".OwO").length>0){
+			new OwO({
+				logo: '<i class="mdi mdi-emoticon-happy-outline mdi-24px"></i>',
+				container: document.getElementsByClassName('OwO')[0],
+				target: document.getElementsByClassName('OwO-textarea')[0],
+				api: Config.owoJson,
+				position: 'up',
+				width: '450px',
+				maxHeight: '250px'
+			});
+		}
+		
     });
 }
 
 //不使用pjax情况下的调用
+
 (function() {
     Ajax_next_post();
     lazy();
     backToTop();
     dianzan();
+    secret();
+    ajaxcomments();
+    tocMulu();
+
 })();
