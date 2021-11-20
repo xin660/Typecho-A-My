@@ -8,6 +8,9 @@
 body.dark-mode{background-image:url(https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/gallery/darkmodepicture6.jpg)!important;color:rgb(201 201 201)}
 .dark-mode .container{background-color:#212529!important}
 .dark-mode .card{background-color:#30363e}
+.dark-mode .header__photo-img {
+    border: 8px solid #30363e;
+}
 .dark-mode .navbar-light .navbar-nav .nav-link{color:rgb(201 201 201)}
 .dark-mode .navbar-light .navbar-nav .nav-link.active{color:rgb(201 201 201);background:linear-gradient(to bottom,transparent 90%,rgb(255 255 255 / 39%) 0) no-repeat}
 .dark-mode .ax_post_box-state{border-top:1px solid #212529;border-bottom:1px solid #212529}
@@ -54,7 +57,7 @@ body.dark-mode{background-image:url(https://cdn.jsdelivr.net/gh/Justlovesmile/CD
 .dark-mode .links li{border:1px solid #212529}
 .dark-mode .doubanboard-item{background:#212529}
 .dark-mode .doubanboard-title,.doubanboard-title a{color:#7e8388!important}
-.dark-mode #book .content li{background-color:#30363e}
+.dark-mode #book .content li{background-color:#212529}
 .dark-mode .post-content{color:#b0b1b2!important}
 .dark-mode pre{background-color:#212529}
 .dark-mode .accordion .card{border:1px solid #212529}
@@ -93,3 +96,16 @@ body.dark-mode{background-image:url(https://cdn.jsdelivr.net/gh/Justlovesmile/CD
 .dark-mode .search-form .btn{background-color:#30363e;border:1px solid #212529;color:rgb(201 201 201)}
 .dark-mode .search-form .btn-outline-secondary:not(:disabled):not(.disabled):active{color:rgb(201 201 201);background-color:#181b1f;border-color:#212529}
 .dark-mode #Search .badge-muted{color:#fff;background-color:#30363e}
+.dark-mode .book>:first-child {
+    -webkit-box-shadow: 5px 5px 20px #212529;
+    box-shadow: 5px 5px 20px #212529;
+}
+.dark-mode .page-bmp {
+    background: #30363e;
+}
+.dark-mode .lyear-timeline-item-dot::before {
+    background-color: rgba(0,0,0,.125);
+}
+.dark-mode .Messages-author .ax_post_box-comment-text::before {
+    border-left-color: #212529;
+}

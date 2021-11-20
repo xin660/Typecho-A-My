@@ -16,6 +16,10 @@ $(function () {
     0 < $("#wmd-button-row").length && (
         $("#wmd-button-row").append('<li class="wmd-spacer wmd-spacer1"></li><li class="wmd-button" id="wmd-images-button" style="" title="插入图集">图集</li>'), 
         $("#wmd-button-row").append('<li class="wmd-spacer wmd-spacer1"></li><li class="wmd-button" id="wmd-photoset-button" style="" title="插入相册">相册</li>'), 
+        $("#wmd-button-row").append('<li class="wmd-spacer wmd-spacer1"></li><li class="wmd-button" id="wmd-imgurl-button" style="" title="插入图片超链接">图片超链接</li>'), 
+        $("#wmd-button-row").append('<li class="wmd-spacer wmd-spacer1"></li><li class="wmd-button" id="wmd-textColor-button" style="" title="插入多彩字体">多彩字体</li>'), 
+        $("#wmd-button-row").append('<li class="wmd-spacer wmd-spacer1"></li><li class="wmd-button" id="wmd-Timeline-button" style="" title="插入时光轴">时光轴</li>'),
+        $("#wmd-button-row").append('<li class="wmd-spacer wmd-spacer1"></li><li class="wmd-button" id="wmd-Messages-button" style="" title="插入消息对话">消息对话</li>'),
         $("#wmd-button-row").append('<li class="wmd-spacer wmd-spacer1"></li><li class="wmd-button" id="wmd-video-button" style="" title="插入视频">视频</li>'), 
         $("#wmd-button-row").append('<li class="wmd-spacer wmd-spacer1"></li><li class="wmd-button" id="wmd-biliVideo-button" style="" title="插入blibli">bilibli视频</li>'),
         $('#wmd-button-row').append('<li class="wmd-spacer wmd-spacer1"></li><li class="wmd-button" id="wmd-cid-button" style="" title="文章跳转">文章跳转</li>'),
@@ -44,6 +48,23 @@ $(function () {
     $(document).on("click", "#wmd-photoset-button", function () {
         myField = document.getElementById("text"), 
         insertAtCursor(myField, '[photos]\n\n[/photos]\n')
+    });
+    $(document).on("click", "#wmd-imgurl-button", function () {
+        myField = document.getElementById("text"), 
+        insertAtCursor(myField, '[imgurl url="" src="" alt=""][/imgurl]\n')
+    });
+    $(document).on("click", "#wmd-textColor-button", function () {
+        myField = document.getElementById("text"), 
+        insertAtCursor(myField, '[textColor color=""][/textColor]\n')
+    });
+
+    $(document).on("click", "#wmd-Timeline-button", function () {
+        myField = document.getElementById("text"), 
+        insertAtCursor(myField, '[Timeline time="2021年"]\n[Timeline-item time="11-20" state="info"]\n内容\n[/Timeline-item]\n[Timeline-item time="11-20" state="yellow"]\n内容\n[/Timeline-item]\n[Timeline-item time="11-20" state="dark"]\n内容\n[/Timeline-item]\n[Timeline-item time="11-20" state="success"]\n内容\n[/Timeline-item]\n[/Timeline]\n')
+    });
+    $(document).on("click", "#wmd-Messages-button", function () {
+        myField = document.getElementById("text"), 
+        insertAtCursor(myField, '[Messages]\n[Messages-item by="user" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=80360650&spec=100"]\n内容\n[/Messages-item]\n[Messages-item by="author" avatar="https://q2.qlogo.cn/headimg_dl?dst_uin=80360650&spec=100"]\n内容\n[/Messages-item]\n[/Messages]\n')
     });
     $(document).on("click", "#wmd-video-button", function () {
         myField = document.getElementById("text"), 

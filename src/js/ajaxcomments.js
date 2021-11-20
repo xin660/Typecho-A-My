@@ -1,6 +1,6 @@
 
 //Ajax 评论
-var ajaxcomments = function(){
+function ajaxcomments(){
     var
     $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
  var
@@ -45,10 +45,10 @@ var ajaxcomments = function(){
                     enter: 'animated fadeInDown',
                     exit: 'animated fadeOutUp'
                 },
-                template: '<div data-notify="container" class="col-xs-6 col-sm-6 alert alert-{0}" role="alert" style="right:0;width:10rem;background:rgb(71 183 76);color: white;box-shadow:rgb(71 183 76 / 50%) 0px 0px 30px 0px;">' +
-                    '<span data-notify="title">{1}</span> ' +
-                    '<span data-notify="message">{2}</span>' +
-                '</div>' 
+                template: '<div data-notify="container" class="col-xs-6 col-sm-6 alert alert-{0}" role="alert" style="right:0;width:12rem;background:#ff9800;color: white;box-shadow:rgb(255 152 0 / 43%) 0px 0px 30px 0px;">' +
+                        '<span data-notify="title">{1}</span> ' +
+                        '<span data-notify="message">{2}</span>' +
+                    '</div>' 
             });
              return false;
          }
@@ -80,10 +80,10 @@ var ajaxcomments = function(){
                     enter: 'animated fadeInDown',
                     exit: 'animated fadeOutUp'
                 },
-                template: '<div data-notify="container" class="col-xs-6 col-sm-6 alert alert-{0}" role="alert" style="right:0;width:10rem;background:rgb(71 183 76);color: white;box-shadow:rgb(71 183 76 / 50%) 0px 0px 30px 0px;">' +
-                    '<span data-notify="title">{1}</span> ' +
-                    '<span data-notify="message">{2}</span>' +
-                '</div>' 
+                template: '<div data-notify="container" class="col-xs-6 col-sm-6 alert alert-{0}" role="alert" style="right:0;width:12rem;background:#ff9800;color: white;box-shadow:rgb(255 152 0 / 43%) 0px 0px 30px 0px;">' +
+                        '<span data-notify="title">{1}</span> ' +
+                        '<span data-notify="message">{2}</span>' +
+                    '</div>' 
             });
              return false;
          },
@@ -94,7 +94,7 @@ var ajaxcomments = function(){
                  if (!$(comment_list, data).length) {
                     $.notify({
                         // options
-                        message: '请检查评论信息！！' 
+                        message: '评论太快了！' 
                         },{
                         // settings
                         element: 'body',
@@ -113,10 +113,10 @@ var ajaxcomments = function(){
                             enter: 'animated fadeInDown',
                             exit: 'animated fadeOutUp'
                         },
-                        template: '<div data-notify="container" class="col-xs-6 col-sm-6 alert alert-{0}" role="alert" style="right:0;width:10rem;background:rgb(71 183 76);color: white;box-shadow:rgb(71 183 76 / 50%) 0px 0px 30px 0px;">' +
-                            '<span data-notify="title">{1}</span> ' +
-                            '<span data-notify="message">{2}</span>' +
-                        '</div>' 
+                        template: '<div data-notify="container" class="col-xs-6 col-sm-6 alert alert-{0}" role="alert" style="right:0;width:12rem;background:#ff9800;color: white;box-shadow:rgb(255 152 0 / 43%) 0px 0px 30px 0px;">' +
+                        '<span data-notify="title">{1}</span> ' +
+                        '<span data-notify="message">{2}</span>' +
+                    '</div>' 
                     });
                      return false;
                  } else {
@@ -198,7 +198,7 @@ var ajaxcomments = function(){
              } catch(e) {
                 $.notify({
                     // options
-                    message: '评论ajax错误!请截图并联系主题制作者！' 
+                    message: '评论ajax错误!' 
                     },{
                     // settings
                     element: 'body',
@@ -217,7 +217,7 @@ var ajaxcomments = function(){
                         enter: 'animated fadeInDown',
                         exit: 'animated fadeOutUp'
                     },
-                    template: '<div data-notify="container" class="col-xs-6 col-sm-6 alert alert-{0}" role="alert" style="right:0;width:10rem;background:rgb(71 183 76);color: white;box-shadow:rgb(71 183 76 / 50%) 0px 0px 30px 0px;">' +
+                    template: '<div data-notify="container" class="col-xs-6 col-sm-6 alert alert-{0}" role="alert" style="right:0;width:12rem;background:#ff9800;color: white;box-shadow:rgb(255 152 0 / 43%) 0px 0px 30px 0px;">' +
                         '<span data-notify="title">{1}</span> ' +
                         '<span data-notify="message">{2}</span>' +
                     '</div>' 

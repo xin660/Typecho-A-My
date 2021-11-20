@@ -180,11 +180,11 @@ function switchNightMode() {
   } (function () {
     if (document.cookie.replace(/(?:(?:^|.*;\s*)night\s*\=\s*([^;]*).*$)|^.*$/, "$1") === "") {
       if (new Date().getHours() > 21 || new Date().getHours() < 6) {
-        document.body.classList.add("nice-dark-mode");
+        document.body.classList.add("dark-mode");
         document.cookie = "night=1;path=/";
         console.log("夜间模式开启")
       } else {
-        document.body.classList.remove("nice-dark-mode");
+        document.body.classList.remove("dark-mode");
         document.cookie = "night=0;path=/";
         console.log("夜间模式关闭")
       }
@@ -329,7 +329,6 @@ if (Config.Pjax === 'true') {
         backToTop();
         dianzan();
         secret();
-        ajaxcomments();
         tocMulu();
         if($(".OwO").length>0){
 			new OwO({
@@ -342,6 +341,7 @@ if (Config.Pjax === 'true') {
 				maxHeight: '250px'
 			});
 		}
+        ajaxcomments();
 		
     });
 }
@@ -354,7 +354,6 @@ if (Config.Pjax === 'true') {
     backToTop();
     dianzan();
     secret();
-    ajaxcomments();
     tocMulu();
-
+    ajaxcomments();
 })();
