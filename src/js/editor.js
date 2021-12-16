@@ -51,7 +51,7 @@ $(function () {
     });
     $(document).on("click", "#wmd-imgurl-button", function () {
         myField = document.getElementById("text"), 
-        insertAtCursor(myField, '[imgurl url="" src="" alt=""][/imgurl]\n')
+        insertAtCursor(myField, '[imgurl url="" src="" alt=""]')
     });
     $(document).on("click", "#wmd-textColor-button", function () {
         myField = document.getElementById("text"), 

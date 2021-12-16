@@ -5,12 +5,9 @@
 .icon-dark-mode{display:none}
 .dark-mode .icon-light-mode{display:none}
 .dark-mode .icon-dark-mode{display:flow-root!important}
-body.dark-mode{background-image:url(https://cdn.jsdelivr.net/gh/Justlovesmile/CDN/gallery/darkmodepicture6.jpg)!important;color:rgb(201 201 201)}
 .dark-mode .container{background-color:#212529!important}
 .dark-mode .card{background-color:#30363e}
-.dark-mode .header__photo-img {
-    border: 8px solid #30363e;
-}
+.dark-mode .sticky-header.is_stuck {background-color: #30363e;}
 .dark-mode .navbar-light .navbar-nav .nav-link{color:rgb(201 201 201)}
 .dark-mode .navbar-light .navbar-nav .nav-link.active{color:rgb(201 201 201);background:linear-gradient(to bottom,transparent 90%,rgb(255 255 255 / 39%) 0) no-repeat}
 .dark-mode .ax_post_box-state{border-top:1px solid #212529;border-bottom:1px solid #212529}
@@ -43,7 +40,8 @@ body.dark-mode{background-image:url(https://cdn.jsdelivr.net/gh/Justlovesmile/CD
 .dark-mode .dark-mode .v-comment{background-color:rgb(48 54 62)}
 .dark-mode .comment-parent{border-bottom:2px dashed #212529}
 .dark-mode .v-comment a{color:rgb(201 201 201)}
-.dark-mode .comment-list li.comment-level-odd{background:#212529}
+.dark-mode .comment-parent:hover .ajax-user-avatar img,.dark-mode .comment-parent:hover .vcomment,.dark-mode .dark-mode .comment-parent:hover{background:#212529}
+.dark-mode .comment-parent:hover .vcontent{background:#30363e}
 .dark-mode .page-navigator a{background:#30363e}
 .dark-mode .page-navigator .current a{background:#000!important}
 .dark-mode .page-header{background-color:#30363e}
@@ -54,7 +52,8 @@ body.dark-mode{background-image:url(https://cdn.jsdelivr.net/gh/Justlovesmile/CD
 .dark-mode .nav-tabs .nav-link{color:rgb(201 201 201)}
 .dark-mode .nav-tabs .nav-link.active{color:rgb(255 255 255);background-color:#30363e;border-color:rgb(201 201 201);font-weight:700}
 .dark-mode .nav-tabs .nav-link:hover{border-color:rgb(255 255 255)}
-.dark-mode .links li{border:1px solid #212529}
+.dark-mode .links-list-item{background:#212529}
+.dark-mode .links-item-info span{color:#fff}
 .dark-mode .doubanboard-item{background:#212529}
 .dark-mode .doubanboard-title,.doubanboard-title a{color:#7e8388!important}
 .dark-mode #book .content li{background-color:#212529}
@@ -64,8 +63,11 @@ body.dark-mode{background-image:url(https://cdn.jsdelivr.net/gh/Justlovesmile/CD
 .dark-mode .accordion .card-header{background-color:#212529}
 .dark-mode .books>:first-child{box-shadow:5px 5px 20px #212529}
 .dark-mode textarea.form-control{border:1px solid #212529;background-color:#212529}
-.dark-mode .vheader input{border-bottom:2px dashed #212529;color:rgb(201 201 201)}
+.dark-mode .ajax-user-avatar img{background:#30363e;border:1px solid rgb(33 37 41)}
+.dark-mode .vheader input{color:rgb(201 201 201);border:1px solid rgb(33 37 41)}
+.dark-mode .veditor{color:rgb(201 201 201);border:1px solid rgb(33 37 41)}
 .dark-mode .vheader input:focus{background:#212529}
+.dark-mode .vcontent{background-color:#212529}
 .dark-mode .dropdown-menu.show{display:block;background:#212529}
 .dark-mode .dropdown-item:hover{background-color:#30363e}
 #universe{display:none}
@@ -96,16 +98,15 @@ body.dark-mode{background-image:url(https://cdn.jsdelivr.net/gh/Justlovesmile/CD
 .dark-mode .search-form .btn{background-color:#30363e;border:1px solid #212529;color:rgb(201 201 201)}
 .dark-mode .search-form .btn-outline-secondary:not(:disabled):not(.disabled):active{color:rgb(201 201 201);background-color:#181b1f;border-color:#212529}
 .dark-mode #Search .badge-muted{color:#fff;background-color:#30363e}
-.dark-mode .book>:first-child {
-    -webkit-box-shadow: 5px 5px 20px #212529;
-    box-shadow: 5px 5px 20px #212529;
-}
-.dark-mode .page-bmp {
-    background: #30363e;
-}
-.dark-mode .lyear-timeline-item-dot::before {
-    background-color: rgba(0,0,0,.125);
-}
-.dark-mode .Messages-author .ax_post_box-comment-text::before {
-    border-left-color: #212529;
-}
+.dark-mode .book>:first-child{-webkit-box-shadow:5px 5px 20px #212529;box-shadow:5px 5px 20px #212529}
+.dark-mode .page-bmp{background:#30363e}
+.dark-mode .lyear-timeline-item-dot::before{background-color:rgba(0,0,0,.125)}
+.dark-mode .Messages-author .ax_post_box-comment-text::before{border-left-color:#212529}
+.dark-mode .header-nav .submenu ul{border-top:2px solid #fff;background:#212529}
+.dark-mode .header-nav .submenu ul:before{border-bottom-color:#fff}
+.dark-mode .category-parent .category-child {border-left: 2px solid #ffffff;}
+.dark-mode .header-nav .submenu .category-parent .category-child ul{border-top:none;}
+.dark-mode .header-nav .submenu ul li a{color:#c9c9c9;border-bottom:1px solid #30363e}
+.dark-mode .github-index .one-git .search-title{color:rgb(255 255 255 / 90%)!important}
+.dark-mode .badge-muted{background-color:#212529}
+.dark-mode .nav-tabs{background:#30363e}
